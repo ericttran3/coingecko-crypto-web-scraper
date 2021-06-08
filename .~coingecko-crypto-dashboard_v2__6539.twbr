@@ -1,0 +1,2485 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0511.0935                               -->
+<workbook source-build='2021.1.2 (20211.21.0511.0935)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='coingecko-crypto-dashboard' path='/workbooks' revision='2.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='coingecko-crypto-list' inline='true' name='federated.0yw0n6n13kouxc1b3vvfn1ytajgb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='coingecko-crypto-list_2021-06-01' name='textscan.0fcc3a31we8cgg16yeg5w1d9kkqs'>
+            <connection class='textscan' directory='/Users/etran/data-product/Projects/Web-Scrapers/coingecko-web-scraper/data' filename='coingecko-crypto-list_2021-06-07.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0fcc3a31we8cgg16yeg5w1d9kkqs' name='coingecko-crypto-list_2021-06-07.csv' table='[coingecko-crypto-list_2021-06-07#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='string' name='symbol' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='string' name='image' ordinal='3' />
+            <column datatype='real' name='current_price' ordinal='4' />
+            <column datatype='real' name='market_cap' ordinal='5' />
+            <column datatype='real' name='market_cap_rank' ordinal='6' />
+            <column datatype='real' name='fully_diluted_valuation' ordinal='7' />
+            <column datatype='real' name='total_volume' ordinal='8' />
+            <column datatype='real' name='high_24h' ordinal='9' />
+            <column datatype='real' name='low_24h' ordinal='10' />
+            <column datatype='real' name='price_change_24h' ordinal='11' />
+            <column datatype='real' name='price_change_percentage_24h' ordinal='12' />
+            <column datatype='real' name='market_cap_change_24h' ordinal='13' />
+            <column datatype='real' name='market_cap_change_percentage_24h' ordinal='14' />
+            <column datatype='real' name='circulating_supply' ordinal='15' />
+            <column datatype='real' name='total_supply' ordinal='16' />
+            <column datatype='real' name='max_supply' ordinal='17' />
+            <column datatype='real' name='ath' ordinal='18' />
+            <column datatype='real' name='ath_change_percentage' ordinal='19' />
+            <column datatype='datetime' name='ath_date' ordinal='20' />
+            <column datatype='real' name='atl' ordinal='21' />
+            <column datatype='real' name='atl_change_percentage' ordinal='22' />
+            <column datatype='datetime' name='atl_date' ordinal='23' />
+            <column datatype='string' name='roi' ordinal='24' />
+            <column datatype='datetime' name='last_updated' ordinal='25' />
+            <column datatype='real' name='price_change_percentage_14d_in_currency' ordinal='26' />
+            <column datatype='real' name='price_change_percentage_1h_in_currency' ordinal='27' />
+            <column datatype='real' name='price_change_percentage_1y_in_currency' ordinal='28' />
+            <column datatype='real' name='price_change_percentage_200d_in_currency' ordinal='29' />
+            <column datatype='real' name='price_change_percentage_24h_in_currency' ordinal='30' />
+            <column datatype='real' name='price_change_percentage_30d_in_currency' ordinal='31' />
+            <column datatype='real' name='price_change_percentage_7d_in_currency' ordinal='32' />
+            <column datatype='datetime' name='created_date' ordinal='33' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0fcc3a31we8cgg16yeg5w1d9kkqs' name='coingecko-crypto-list_2021-06-07.csv' table='[coingecko-crypto-list_2021-06-07#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='string' name='symbol' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='string' name='image' ordinal='3' />
+            <column datatype='real' name='current_price' ordinal='4' />
+            <column datatype='real' name='market_cap' ordinal='5' />
+            <column datatype='real' name='market_cap_rank' ordinal='6' />
+            <column datatype='real' name='fully_diluted_valuation' ordinal='7' />
+            <column datatype='real' name='total_volume' ordinal='8' />
+            <column datatype='real' name='high_24h' ordinal='9' />
+            <column datatype='real' name='low_24h' ordinal='10' />
+            <column datatype='real' name='price_change_24h' ordinal='11' />
+            <column datatype='real' name='price_change_percentage_24h' ordinal='12' />
+            <column datatype='real' name='market_cap_change_24h' ordinal='13' />
+            <column datatype='real' name='market_cap_change_percentage_24h' ordinal='14' />
+            <column datatype='real' name='circulating_supply' ordinal='15' />
+            <column datatype='real' name='total_supply' ordinal='16' />
+            <column datatype='real' name='max_supply' ordinal='17' />
+            <column datatype='real' name='ath' ordinal='18' />
+            <column datatype='real' name='ath_change_percentage' ordinal='19' />
+            <column datatype='datetime' name='ath_date' ordinal='20' />
+            <column datatype='real' name='atl' ordinal='21' />
+            <column datatype='real' name='atl_change_percentage' ordinal='22' />
+            <column datatype='datetime' name='atl_date' ordinal='23' />
+            <column datatype='string' name='roi' ordinal='24' />
+            <column datatype='datetime' name='last_updated' ordinal='25' />
+            <column datatype='real' name='price_change_percentage_14d_in_currency' ordinal='26' />
+            <column datatype='real' name='price_change_percentage_1h_in_currency' ordinal='27' />
+            <column datatype='real' name='price_change_percentage_1y_in_currency' ordinal='28' />
+            <column datatype='real' name='price_change_percentage_200d_in_currency' ordinal='29' />
+            <column datatype='real' name='price_change_percentage_24h_in_currency' ordinal='30' />
+            <column datatype='real' name='price_change_percentage_30d_in_currency' ordinal='31' />
+            <column datatype='real' name='price_change_percentage_7d_in_currency' ordinal='32' />
+            <column datatype='datetime' name='created_date' ordinal='33' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[symbol]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>symbol</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[image]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>image</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>current_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[current_price]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>current_price</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_cap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[market_cap]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>market_cap</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_cap_rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[market_cap_rank]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>market_cap_rank</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fully_diluted_valuation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fully_diluted_valuation]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>fully_diluted_valuation</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_volume</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_volume]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>total_volume</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high_24h</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[high_24h]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>high_24h</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>low_24h</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[low_24h]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>low_24h</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_change_24h</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_change_24h]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>price_change_24h</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_change_percentage_24h</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_change_percentage_24h]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>price_change_percentage_24h</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_cap_change_24h</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[market_cap_change_24h]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>market_cap_change_24h</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_cap_change_percentage_24h</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[market_cap_change_percentage_24h]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>market_cap_change_percentage_24h</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>circulating_supply</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[circulating_supply]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>circulating_supply</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_supply</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_supply]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>total_supply</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_supply</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[max_supply]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>max_supply</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ath</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ath]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>ath</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ath_change_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ath_change_percentage]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>ath_change_percentage</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ath_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[ath_date]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>ath_date</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>atl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[atl]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>atl</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>atl_change_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[atl_change_percentage]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>atl_change_percentage</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>atl_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[atl_date]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>atl_date</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>roi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[roi]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>roi</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_updated</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[last_updated]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>last_updated</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_change_percentage_14d_in_currency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_change_percentage_14d_in_currency]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>price_change_percentage_14d_in_currency</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_change_percentage_1h_in_currency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_change_percentage_1h_in_currency]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>price_change_percentage_1h_in_currency</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_change_percentage_1y_in_currency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_change_percentage_1y_in_currency]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>price_change_percentage_1y_in_currency</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_change_percentage_200d_in_currency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_change_percentage_200d_in_currency]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>price_change_percentage_200d_in_currency</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_change_percentage_24h_in_currency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_change_percentage_24h_in_currency]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>price_change_percentage_24h_in_currency</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_change_percentage_30d_in_currency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_change_percentage_30d_in_currency]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>price_change_percentage_30d_in_currency</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_change_percentage_7d_in_currency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_change_percentage_7d_in_currency]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>price_change_percentage_7d_in_currency</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[created_date]</local-name>
+            <parent-name>[coingecko-crypto-list_2021-06-07.csv]</parent-name>
+            <remote-alias>created_date</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='! ATL Coins' datatype='integer' default-format='N' name='[! ATH Coins (copy)_460141269430276101]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [atl_date] &gt;= TODAY()-1 THEN  1 ELSE 0 END)' />
+      </column>
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:ath:qk]&quot;' value='All Time High (Ath)' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:atl:qk]&quot;' value='All Time Low (Atl)' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:circulating_supply:qk]&quot;' value='Circulating Supply' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:current_price:qk]&quot;' value='Current Price' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:high_24h:qk]&quot;' value='High 24H' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:low_24h:qk]&quot;' value='Low 24H' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap_change_24h:qk]&quot;' value='Market Cap Change 24H' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap_change_percentage_24h:qk]&quot;' value='Market Cap Change Percentage 24H' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap_rank:qk]&quot;' value='Market Cap Rank' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap:qk]&quot;' value='Market Cap' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:max_supply:qk]&quot;' value='Max Supply' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:total_supply:qk]&quot;' value='Total Supply' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:total_volume:qk]&quot;' value='Total Volume' />
+          <alias key='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:Calculation_460141269434998790:qk]&quot;' value='Percent Mined' />
+        </aliases>
+      </column>
+      <column caption='! Updated Date' datatype='string' name='[Calculation_1779907064314548225]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&apos;Updated Date: &apos;' />
+      </column>
+      <column caption='! Last Updated Date' datatype='datetime' name='[Calculation_1779907064314707970]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='MAX([last_updated])' />
+      </column>
+      <column caption='! Total Coins' datatype='integer' name='[Calculation_460141269421494272]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([id])' />
+      </column>
+      <column caption='! Total Market Cap' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Calculation_460141269422632961]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([market_cap])' />
+      </column>
+      <column caption='! Market Indicator' datatype='string' name='[Calculation_460141269424852994]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF AVG([price_change_percentage_24h]) &gt; 0 THEN &apos;UP&apos; ELSE &apos;DOWN&apos; END' />
+      </column>
+      <column caption='! KPI' datatype='integer' name='[Calculation_460141269425479683]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_460141269424852994] = &apos;UP&apos; THEN 1&#10;ELSE 0&#10;END' />
+      </column>
+      <column caption='! ATH Coins' datatype='integer' name='[Calculation_460141269429485572]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [ath_date] &gt;= TODAY() THEN  1 ELSE 0 END)' />
+      </column>
+      <column caption='! Percent Mined' datatype='real' default-format='p0.0%' name='[Calculation_460141269434998790]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IFNULL([circulating_supply] / [total_supply],0)' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='coingecko-crypto-list_2021-06-07.csv' datatype='table' name='[__tableau_internal_object_id__].[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]' role='measure' type='quantitative' />
+      <column caption='Ath' datatype='real' default-format='n#,##0;-#,##0' name='[ath]' role='measure' type='quantitative' />
+      <column caption='Ath Change Percentage' datatype='real' name='[ath_change_percentage]' role='measure' type='quantitative' />
+      <column caption='Ath Date' datatype='datetime' name='[ath_date]' role='dimension' type='ordinal' />
+      <column caption='Atl' datatype='real' default-format='n#,##0;-#,##0' name='[atl]' role='measure' type='quantitative' />
+      <column caption='Atl Change Percentage' datatype='real' name='[atl_change_percentage]' role='measure' type='quantitative' />
+      <column caption='Atl Date' datatype='datetime' name='[atl_date]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Circulating Supply' datatype='real' default-format='n#,##0;-#,##0' name='[circulating_supply]' role='dimension' type='ordinal' />
+      <column caption='Created Date' datatype='datetime' default-format='*m/d/yyyy' name='[created_date]' role='dimension' type='ordinal' />
+      <column caption='Current Price' datatype='real' default-format='n#,##0;-#,##0' name='[current_price]' role='measure' type='quantitative' />
+      <column caption='Fully Diluted Valuation' datatype='real' default-format='n#,##0;-#,##0' name='[fully_diluted_valuation]' role='measure' type='quantitative' />
+      <column caption='High 24H' datatype='real' default-format='n#,##0;-#,##0' name='[high_24h]' role='measure' type='quantitative' />
+      <column caption='Coin ID' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column caption='Image' datatype='string' name='[image]' role='dimension' type='nominal' />
+      <column caption='Last Updated' datatype='datetime' name='[last_updated]' role='dimension' type='ordinal' />
+      <column caption='Low 24H' datatype='real' default-format='n#,##0;-#,##0' name='[low_24h]' role='measure' type='quantitative' />
+      <column caption='Market Cap' datatype='real' default-format='n#,##0;-#,##0' name='[market_cap]' role='measure' type='quantitative' />
+      <column caption='Market Cap Change 24H' datatype='real' default-format='n#,##0;-#,##0' name='[market_cap_change_24h]' role='measure' type='quantitative' />
+      <column caption='Market Cap Change Percentage 24H' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[market_cap_change_percentage_24h]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Market Cap Rank' datatype='real' default-format='n#,##0;-#,##0' name='[market_cap_rank]' role='dimension' type='quantitative' />
+      <column caption='Max Supply' datatype='real' default-format='n#,##0;-#,##0' name='[max_supply]' role='measure' type='quantitative' />
+      <column caption='Coin Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Price Change 24H' datatype='real' default-format='n#,##0;-#,##0' name='[price_change_24h]' role='measure' type='quantitative' />
+      <column caption='Price Change Percentage 14D In Currency' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[price_change_percentage_14d_in_currency]' role='measure' type='quantitative' />
+      <column caption='Price Change Percentage 1H In Currency' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[price_change_percentage_1h_in_currency]' role='measure' type='quantitative' />
+      <column caption='Price Change Percentage 1Y In Currency' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[price_change_percentage_1y_in_currency]' role='measure' type='quantitative' />
+      <column caption='Price Change Percentage 200D In Currency' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[price_change_percentage_200d_in_currency]' role='measure' type='quantitative' />
+      <column caption='Price Change Percentage 24H' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[price_change_percentage_24h]' role='measure' type='quantitative' />
+      <column caption='Price Change Percentage 24H In Currency' datatype='real' name='[price_change_percentage_24h_in_currency]' role='measure' type='quantitative' />
+      <column caption='Price Change Percentage 30D In Currency' datatype='real' name='[price_change_percentage_30d_in_currency]' role='measure' type='quantitative' />
+      <column caption='Price Change Percentage 7D In Currency' datatype='real' name='[price_change_percentage_7d_in_currency]' role='measure' type='quantitative' />
+      <column caption='Roi' datatype='string' name='[roi]' role='dimension' type='nominal' />
+      <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+      <column caption='Total Supply' datatype='real' default-format='n#,##0;-#,##0' name='[total_supply]' role='measure' type='quantitative' />
+      <column caption='Total Volume' datatype='real' default-format='n#,##0;-#,##0' name='[total_volume]' role='measure' type='quantitative' />
+      <column-instance column='[ath]' derivation='Max' name='[max:ath:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[atl]' derivation='Max' name='[max:atl:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[circulating_supply]' derivation='Max' name='[max:circulating_supply:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[current_price]' derivation='Max' name='[max:current_price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[high_24h]' derivation='Max' name='[max:high_24h:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[low_24h]' derivation='Max' name='[max:low_24h:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[market_cap]' derivation='Max' name='[max:market_cap:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[market_cap_change_24h]' derivation='Max' name='[max:market_cap_change_24h:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[market_cap_change_percentage_24h]' derivation='Max' name='[max:market_cap_change_percentage_24h:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_supply]' derivation='Max' name='[max:total_supply:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_volume]' derivation='Max' name='[max:total_volume:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_460141269434998790]' derivation='Sum' name='[sum:Calculation_460141269434998790:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/etran/Documents/My Tableau Repository/Datasources/coingecko-crypto-list_2021-06-01.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/08/2021 04:27:02 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='coingecko-crypto-list' increment-value='%null%' refresh-type='create' rows-inserted='7762' timestamp-start='2021-06-08 04:27:02.404' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3866</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[symbol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>symbol</remote-alias>
+              <ordinal>1</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3276</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3866</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>image</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[image]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>image</remote-alias>
+              <ordinal>3</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3831</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>current_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[current_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>current_price</remote-alias>
+              <ordinal>4</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3156</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>market_cap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[market_cap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market_cap</remote-alias>
+              <ordinal>5</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3693</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>market_cap_rank</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[market_cap_rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market_cap_rank</remote-alias>
+              <ordinal>6</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4243</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fully_diluted_valuation</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fully_diluted_valuation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fully_diluted_valuation</remote-alias>
+              <ordinal>7</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1227</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_volume</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_volume]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_volume</remote-alias>
+              <ordinal>8</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3467</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>high_24h</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[high_24h]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>high_24h</remote-alias>
+              <ordinal>9</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2658</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>low_24h</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[low_24h]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>low_24h</remote-alias>
+              <ordinal>10</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2683</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_change_24h</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_change_24h]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_change_24h</remote-alias>
+              <ordinal>11</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2838</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_change_percentage_24h</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_change_percentage_24h]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_change_percentage_24h</remote-alias>
+              <ordinal>12</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3221</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>market_cap_change_24h</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[market_cap_change_24h]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market_cap_change_24h</remote-alias>
+              <ordinal>13</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3328</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>market_cap_change_percentage_24h</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[market_cap_change_percentage_24h]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market_cap_change_percentage_24h</remote-alias>
+              <ordinal>14</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3319</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>circulating_supply</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[circulating_supply]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>circulating_supply</remote-alias>
+              <ordinal>15</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2618</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_supply</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_supply]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_supply</remote-alias>
+              <ordinal>16</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1326</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>max_supply</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[max_supply]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>max_supply</remote-alias>
+              <ordinal>17</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>331</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ath</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ath]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ath</remote-alias>
+              <ordinal>18</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3001</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ath_change_percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ath_change_percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ath_change_percentage</remote-alias>
+              <ordinal>19</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3740</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ath_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[ath_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ath_date</remote-alias>
+              <ordinal>20</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3353</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>atl</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[atl]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>atl</remote-alias>
+              <ordinal>21</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3084</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>atl_change_percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[atl_change_percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>atl_change_percentage</remote-alias>
+              <ordinal>22</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3685</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>atl_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[atl_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>atl_date</remote-alias>
+              <ordinal>23</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3511</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>roi</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[roi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>roi</remote-alias>
+              <ordinal>24</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>974</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_updated</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[last_updated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_updated</remote-alias>
+              <ordinal>25</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3776</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_change_percentage_14d_in_currency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_change_percentage_14d_in_currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_change_percentage_14d_in_currency</remote-alias>
+              <ordinal>26</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3292</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_change_percentage_1h_in_currency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_change_percentage_1h_in_currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_change_percentage_1h_in_currency</remote-alias>
+              <ordinal>27</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2856</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_change_percentage_1y_in_currency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_change_percentage_1y_in_currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_change_percentage_1y_in_currency</remote-alias>
+              <ordinal>28</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2052</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_change_percentage_200d_in_currency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_change_percentage_200d_in_currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_change_percentage_200d_in_currency</remote-alias>
+              <ordinal>29</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2402</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_change_percentage_24h_in_currency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_change_percentage_24h_in_currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_change_percentage_24h_in_currency</remote-alias>
+              <ordinal>30</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3221</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_change_percentage_30d_in_currency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_change_percentage_30d_in_currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_change_percentage_30d_in_currency</remote-alias>
+              <ordinal>31</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3000</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_change_percentage_7d_in_currency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_change_percentage_7d_in_currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_change_percentage_7d_in_currency</remote-alias>
+              <ordinal>32</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3317</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[created_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>created_date</remote-alias>
+              <ordinal>33</ordinal>
+              <family>coingecko-crypto-list_2021-06-07.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='coingecko-crypto-list_2021-06-07.csv' id='coingecko-crypto-list_2021-06-07.csv_00D02924DDA9413985A182B75A37E6EA'>
+            <properties context=''>
+              <relation connection='textscan.0fcc3a31we8cgg16yeg5w1d9kkqs' name='coingecko-crypto-list_2021-06-07.csv' table='[coingecko-crypto-list_2021-06-07#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='id' ordinal='0' />
+                  <column datatype='string' name='symbol' ordinal='1' />
+                  <column datatype='string' name='name' ordinal='2' />
+                  <column datatype='string' name='image' ordinal='3' />
+                  <column datatype='real' name='current_price' ordinal='4' />
+                  <column datatype='real' name='market_cap' ordinal='5' />
+                  <column datatype='real' name='market_cap_rank' ordinal='6' />
+                  <column datatype='real' name='fully_diluted_valuation' ordinal='7' />
+                  <column datatype='real' name='total_volume' ordinal='8' />
+                  <column datatype='real' name='high_24h' ordinal='9' />
+                  <column datatype='real' name='low_24h' ordinal='10' />
+                  <column datatype='real' name='price_change_24h' ordinal='11' />
+                  <column datatype='real' name='price_change_percentage_24h' ordinal='12' />
+                  <column datatype='real' name='market_cap_change_24h' ordinal='13' />
+                  <column datatype='real' name='market_cap_change_percentage_24h' ordinal='14' />
+                  <column datatype='real' name='circulating_supply' ordinal='15' />
+                  <column datatype='real' name='total_supply' ordinal='16' />
+                  <column datatype='real' name='max_supply' ordinal='17' />
+                  <column datatype='real' name='ath' ordinal='18' />
+                  <column datatype='real' name='ath_change_percentage' ordinal='19' />
+                  <column datatype='datetime' name='ath_date' ordinal='20' />
+                  <column datatype='real' name='atl' ordinal='21' />
+                  <column datatype='real' name='atl_change_percentage' ordinal='22' />
+                  <column datatype='datetime' name='atl_date' ordinal='23' />
+                  <column datatype='string' name='roi' ordinal='24' />
+                  <column datatype='datetime' name='last_updated' ordinal='25' />
+                  <column datatype='real' name='price_change_percentage_14d_in_currency' ordinal='26' />
+                  <column datatype='real' name='price_change_percentage_1h_in_currency' ordinal='27' />
+                  <column datatype='real' name='price_change_percentage_1y_in_currency' ordinal='28' />
+                  <column datatype='real' name='price_change_percentage_200d_in_currency' ordinal='29' />
+                  <column datatype='real' name='price_change_percentage_24h_in_currency' ordinal='30' />
+                  <column datatype='real' name='price_change_percentage_30d_in_currency' ordinal='31' />
+                  <column datatype='real' name='price_change_percentage_7d_in_currency' ordinal='32' />
+                  <column datatype='datetime' name='created_date' ordinal='33' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='ATH Coins'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='18'>ATHs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coingecko-crypto-list' name='federated.0yw0n6n13kouxc1b3vvfn1ytajgb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yw0n6n13kouxc1b3vvfn1ytajgb'>
+            <column caption='! ATH Coins' datatype='integer' name='[Calculation_460141269429485572]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [ath_date] &gt;= TODAY() THEN  1 ELSE 0 END)' />
+            </column>
+            <column caption='Ath Date' datatype='datetime' name='[ath_date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_460141269429485572]' derivation='User' name='[usr:Calculation_460141269429485572:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='26' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[usr:Calculation_460141269429485572:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{63C35260-7DCF-44D9-AD64-B741EABB61FD}' />
+    </worksheet>
+    <worksheet name='ATL Coins'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='18'>ATLs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coingecko-crypto-list' name='federated.0yw0n6n13kouxc1b3vvfn1ytajgb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yw0n6n13kouxc1b3vvfn1ytajgb'>
+            <column caption='! ATL Coins' datatype='integer' default-format='N' name='[! ATH Coins (copy)_460141269430276101]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [atl_date] &gt;= TODAY()-1 THEN  1 ELSE 0 END)' />
+            </column>
+            <column caption='Atl Date' datatype='datetime' name='[atl_date]' role='dimension' type='ordinal' />
+            <column-instance column='[! ATH Coins (copy)_460141269430276101]' derivation='User' name='[usr:! ATH Coins (copy)_460141269430276101:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='26' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[usr:! ATH Coins (copy)_460141269430276101:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BF7DF6E0-22BC-428D-A293-1C872F7E7664}' />
+    </worksheet>
+    <worksheet name='Avg. Pct Mined'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold' fontsize='18'>Avg Pct. Mined</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coingecko-crypto-list' name='federated.0yw0n6n13kouxc1b3vvfn1ytajgb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yw0n6n13kouxc1b3vvfn1ytajgb'>
+            <column caption='Atl Change Percentage' datatype='real' name='[atl_change_percentage]' role='measure' type='quantitative' />
+            <column-instance column='[atl_change_percentage]' derivation='Avg' name='[avg:atl_change_percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='261' />
+            <format attr='height' value='46' />
+            <format attr='text-align' value='center' />
+            <format attr='cell-w' value='54' />
+            <format attr='cell-h' value='18' />
+            <format attr='cell' value='18' />
+            <format attr='cell-q' value='90' />
+            <format attr='vertical-align' value='top' />
+            <format attr='wrap' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='vertical-align' value='top' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='26' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[avg:atl_change_percentage:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2524D2ED-8E60-4C55-8D88-81D9D5F619E5}' />
+    </worksheet>
+    <worksheet name='Coin Summary'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coingecko-crypto-list' name='federated.0yw0n6n13kouxc1b3vvfn1ytajgb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yw0n6n13kouxc1b3vvfn1ytajgb'>
+            <column caption='! Percent Mined' datatype='real' default-format='p0.0%' name='[Calculation_460141269434998790]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IFNULL([circulating_supply] / [total_supply],0)' />
+            </column>
+            <column caption='Ath' datatype='real' default-format='n#,##0;-#,##0' name='[ath]' role='measure' type='quantitative' />
+            <column caption='Ath Date' datatype='datetime' name='[ath_date]' role='dimension' type='ordinal' />
+            <column caption='Atl' datatype='real' default-format='n#,##0;-#,##0' name='[atl]' role='measure' type='quantitative' />
+            <column caption='Atl Date' datatype='datetime' name='[atl_date]' role='dimension' type='ordinal' />
+            <column-instance column='[ath_date]' derivation='Attribute' name='[attr:ath_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[atl_date]' derivation='Attribute' name='[attr:atl_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[last_updated]' derivation='Attribute' name='[attr:last_updated:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[roi]' derivation='Attribute' name='[attr:roi:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Circulating Supply' datatype='real' default-format='n#,##0;-#,##0' name='[circulating_supply]' role='dimension' type='ordinal' />
+            <column caption='Created Date' datatype='datetime' default-format='*m/d/yyyy' name='[created_date]' role='dimension' type='ordinal' />
+            <column caption='Current Price' datatype='real' default-format='n#,##0;-#,##0' name='[current_price]' role='measure' type='quantitative' />
+            <column caption='Fully Diluted Valuation' datatype='real' default-format='n#,##0;-#,##0' name='[fully_diluted_valuation]' role='measure' type='quantitative' />
+            <column caption='High 24H' datatype='real' default-format='n#,##0;-#,##0' name='[high_24h]' role='measure' type='quantitative' />
+            <column caption='Coin ID' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column caption='Last Updated' datatype='datetime' name='[last_updated]' role='dimension' type='ordinal' />
+            <column caption='Low 24H' datatype='real' default-format='n#,##0;-#,##0' name='[low_24h]' role='measure' type='quantitative' />
+            <column caption='Market Cap' datatype='real' default-format='n#,##0;-#,##0' name='[market_cap]' role='measure' type='quantitative' />
+            <column caption='Market Cap Change 24H' datatype='real' default-format='n#,##0;-#,##0' name='[market_cap_change_24h]' role='measure' type='quantitative' />
+            <column caption='Market Cap Change Percentage 24H' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[market_cap_change_percentage_24h]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Market Cap Rank' datatype='real' default-format='n#,##0;-#,##0' name='[market_cap_rank]' role='dimension' type='quantitative' />
+            <column-instance column='[ath]' derivation='Max' name='[max:ath:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[atl]' derivation='Max' name='[max:atl:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[circulating_supply]' derivation='Max' name='[max:circulating_supply:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[current_price]' derivation='Max' name='[max:current_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[high_24h]' derivation='Max' name='[max:high_24h:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[low_24h]' derivation='Max' name='[max:low_24h:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[market_cap]' derivation='Max' name='[max:market_cap:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[market_cap_change_24h]' derivation='Max' name='[max:market_cap_change_24h:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[market_cap_change_percentage_24h]' derivation='Max' name='[max:market_cap_change_percentage_24h:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_supply]' derivation='Max' name='[max:total_supply:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_volume]' derivation='Max' name='[max:total_volume:qk]' pivot='key' type='quantitative' />
+            <column caption='Max Supply' datatype='real' default-format='n#,##0;-#,##0' name='[max_supply]' role='measure' type='quantitative' />
+            <column caption='Coin Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[created_date]' derivation='None' name='[none:created_date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market_cap_rank]' derivation='None' name='[none:market_cap_rank:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[market_cap_rank]' derivation='None' name='[none:market_cap_rank:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[symbol]' derivation='None' name='[none:symbol:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_supply]' derivation='None' name='[none:total_supply:ok]' pivot='key' type='ordinal' />
+            <column caption='Price Change 24H' datatype='real' default-format='n#,##0;-#,##0' name='[price_change_24h]' role='measure' type='quantitative' />
+            <column caption='Price Change Percentage 14D In Currency' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[price_change_percentage_14d_in_currency]' role='measure' type='quantitative' />
+            <column caption='Price Change Percentage 1H In Currency' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[price_change_percentage_1h_in_currency]' role='measure' type='quantitative' />
+            <column caption='Price Change Percentage 1Y In Currency' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[price_change_percentage_1y_in_currency]' role='measure' type='quantitative' />
+            <column caption='Price Change Percentage 200D In Currency' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[price_change_percentage_200d_in_currency]' role='measure' type='quantitative' />
+            <column caption='Roi' datatype='string' name='[roi]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_460141269434998790]' derivation='Sum' name='[sum:Calculation_460141269434998790:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[circulating_supply]' derivation='Sum' name='[sum:circulating_supply:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[current_price]' derivation='Sum' name='[sum:current_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[fully_diluted_valuation]' derivation='Sum' name='[sum:fully_diluted_valuation:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[market_cap]' derivation='Sum' name='[sum:market_cap:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[max_supply]' derivation='Sum' name='[sum:max_supply:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price_change_24h]' derivation='Sum' name='[sum:price_change_24h:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price_change_percentage_14d_in_currency]' derivation='Sum' name='[sum:price_change_percentage_14d_in_currency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price_change_percentage_1h_in_currency]' derivation='Sum' name='[sum:price_change_percentage_1h_in_currency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price_change_percentage_1y_in_currency]' derivation='Sum' name='[sum:price_change_percentage_1y_in_currency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price_change_percentage_200d_in_currency]' derivation='Sum' name='[sum:price_change_percentage_200d_in_currency:qk]' pivot='key' type='quantitative' />
+            <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+            <column caption='Total Supply' datatype='real' default-format='n#,##0;-#,##0' name='[total_supply]' role='measure' type='quantitative' />
+            <column caption='Total Volume' datatype='real' default-format='n#,##0;-#,##0' name='[total_volume]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:current_price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:low_24h:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:high_24h:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:atl:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:ath:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:total_volume:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:circulating_supply:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:total_supply:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:Calculation_460141269434998790:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap_change_24h:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap_change_percentage_24h:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:price_change_24h:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:price_change_percentage_1h_in_currency:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:price_change_percentage_14d_in_currency:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:price_change_percentage_1y_in_currency:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:price_change_percentage_200d_in_currency:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:fully_diluted_valuation:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:current_price:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:low_24h:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:high_24h:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:atl:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:ath:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:total_volume:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:circulating_supply:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:total_supply:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:Calculation_460141269434998790:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap_change_24h:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap_change_percentage_24h:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:price_change_24h:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:price_change_percentage_1h_in_currency:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:price_change_percentage_14d_in_currency:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:price_change_percentage_1y_in_currency:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:price_change_percentage_200d_in_currency:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:fully_diluted_valuation:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:created_date:qk]' included-values='in-range'>
+            <min>#2021-06-01 20:31:56#</min>
+            <max>#2021-06-08 20:31:56#</max>
+          </filter>
+          <filter class='categorical' column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:id:nk]'>
+            <groupfilter function='level-members' level='[none:id:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:market_cap_rank:qk]' included-values='in-range'>
+            <min>1.0</min>
+            <max>2797.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:name:nk]'>
+            <groupfilter function='level-members' level='[none:name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:symbol:nk]'>
+            <groupfilter function='level-members' level='[none:symbol:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:id:nk]' direction='DESC' measure-to-sort-by='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[:Measure Names]</column>
+            <column>[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:id:nk]</column>
+            <column>[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:name:nk]</column>
+            <column>[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:symbol:nk]</column>
+            <column>[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:created_date:qk]</column>
+            <column>[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:market_cap_rank:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[:Measure Names]' value='113' />
+            <format attr='text-format' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:low_24h:qk]' value='c&quot;$&quot;#,##0.0;(&quot;$&quot;#,##0.0)' />
+            <format attr='text-format' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:current_price:qk]' value='c&quot;$&quot;#,##0.0;(&quot;$&quot;#,##0.0)' />
+            <format attr='text-format' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:high_24h:qk]' value='c&quot;$&quot;#,##0.0;(&quot;$&quot;#,##0.0)' />
+            <format attr='text-format' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:market_cap:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+            <format attr='text-format' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:ath:qk]' value='c&quot;$&quot;#,##0.0;(&quot;$&quot;#,##0.0)' />
+            <format attr='text-format' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:atl:qk]' value='c&quot;$&quot;#,##0.0;(&quot;$&quot;#,##0.0)' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:name:nk]' value='120' />
+            <format attr='height' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[:Measure Names]' value='64' />
+            <format attr='width' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:id:nk]' value='128' />
+            <format attr='width' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:symbol:nk]' value='60' />
+            <format attr='width' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:market_cap_rank:ok]' value='64' />
+            <format attr='width' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:total_supply:ok]' value='144' />
+            <format attr='background-color' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[:Measure Names]' value='#336699' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='color' value='#ffffff' />
+            <format attr='background-color' value='#336699' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[:Measure Names]' value='bold' />
+            <format attr='font-family' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[:Measure Names]' value='Tableau Bold' />
+            <format attr='color' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[:Measure Names]' value='#ffffff' />
+            <format attr='text-format' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:atl:qk]' value='c&quot;$&quot;#,##0.00;(&quot;$&quot;#,##0.00)' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-level' scope='rows' value='3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[attr:last_updated:ok]' />
+              <tooltip column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[attr:ath_date:ok]' />
+              <tooltip column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[attr:atl_date:ok]' />
+              <tooltip column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[attr:roi:nk]' />
+              <tooltip column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:ath:qk]' />
+              <tooltip column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[max:atl:qk]' />
+              <tooltip column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:current_price:qk]' />
+              <tooltip column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:circulating_supply:qk]' />
+              <tooltip column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:market_cap:qk]' />
+              <tooltip column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[sum:max_supply:qk]' />
+              <text column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>([federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:id:nk] / ([federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:name:nk] / ([federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:symbol:nk] / ([federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:total_supply:ok] / [federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:market_cap_rank:ok]))))</rows>
+        <cols total='true'>[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{141D8928-ED20-4716-BAD5-F55A8A85FABA}' />
+    </worksheet>
+    <worksheet name='Coins'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold' fontsize='18'>Coins</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coingecko-crypto-list' name='federated.0yw0n6n13kouxc1b3vvfn1ytajgb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yw0n6n13kouxc1b3vvfn1ytajgb'>
+            <column caption='! Total Coins' datatype='integer' name='[Calculation_460141269421494272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([id])' />
+            </column>
+            <column caption='Coin ID' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_460141269421494272]' derivation='User' name='[usr:Calculation_460141269421494272:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='119' />
+            <format attr='height' value='46' />
+            <format attr='text-align' value='center' />
+            <format attr='cell-w' value='54' />
+            <format attr='cell-h' value='18' />
+            <format attr='cell' value='18' />
+            <format attr='cell-q' value='90' />
+            <format attr='vertical-align' value='top' />
+            <format attr='wrap' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='vertical-align' value='top' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='26' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[usr:Calculation_460141269421494272:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{28D2768D-534E-4146-BB5A-420C10EFE612}' />
+    </worksheet>
+    <worksheet name='Market Indicator'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='18'>Market Ind</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coingecko-crypto-list' name='federated.0yw0n6n13kouxc1b3vvfn1ytajgb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yw0n6n13kouxc1b3vvfn1ytajgb'>
+            <column caption='! Market Indicator' datatype='string' name='[Calculation_460141269424852994]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF AVG([price_change_percentage_24h]) &gt; 0 THEN &apos;UP&apos; ELSE &apos;DOWN&apos; END' />
+            </column>
+            <column caption='Price Change Percentage 24H' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[price_change_percentage_24h]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_460141269424852994]' derivation='User' name='[usr:Calculation_460141269424852994:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='357' />
+            <format attr='height' value='46' />
+            <format attr='text-align' value='center' />
+            <format attr='cell-w' value='54' />
+            <format attr='cell-h' value='18' />
+            <format attr='cell' value='18' />
+            <format attr='cell-q' value='90' />
+            <format attr='vertical-align' value='top' />
+            <format attr='wrap' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='vertical-align' value='top' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='26' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[usr:Calculation_460141269424852994:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A66BE26E-E763-4684-B3F7-36F3B3DA6F60}' />
+    </worksheet>
+    <worksheet name='Total Market Cap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='18'>Market Cap (USD)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coingecko-crypto-list' name='federated.0yw0n6n13kouxc1b3vvfn1ytajgb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yw0n6n13kouxc1b3vvfn1ytajgb'>
+            <column caption='! Total Market Cap' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Calculation_460141269422632961]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([market_cap])' />
+            </column>
+            <column caption='Market Cap' datatype='real' default-format='n#,##0;-#,##0' name='[market_cap]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_460141269422632961]' derivation='User' name='[usr:Calculation_460141269422632961:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='357' />
+            <format attr='height' value='46' />
+            <format attr='text-align' value='center' />
+            <format attr='cell-w' value='54' />
+            <format attr='cell-h' value='18' />
+            <format attr='cell' value='18' />
+            <format attr='cell-q' value='90' />
+            <format attr='vertical-align' value='top' />
+            <format attr='wrap' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='vertical-align' value='top' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='26' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[usr:Calculation_460141269422632961:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E04F137A-6CC7-43EA-8129-409F125167D8}' />
+    </worksheet>
+    <worksheet name='Updated Date'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coingecko-crypto-list' name='federated.0yw0n6n13kouxc1b3vvfn1ytajgb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yw0n6n13kouxc1b3vvfn1ytajgb'>
+            <column caption='! Updated Date' datatype='string' name='[Calculation_1779907064314548225]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&apos;Updated Date: &apos;' />
+            </column>
+            <column caption='! Last Updated Date' datatype='datetime' name='[Calculation_1779907064314707970]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='MAX([last_updated])' />
+            </column>
+            <column caption='Last Updated' datatype='datetime' name='[last_updated]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1779907064314548225]' derivation='None' name='[none:Calculation_1779907064314548225:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1779907064314707970]' derivation='User' name='[usr:Calculation_1779907064314707970:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='133' />
+            <format attr='text-align' value='left' />
+            <format attr='border-width' value='0' />
+            <format attr='vertical-align' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:Calculation_1779907064314548225:nk]' value='bottom' />
+            <format attr='text-orientation' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:Calculation_1779907064314548225:nk]' value='0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:Calculation_1779907064314548225:nk]' value='88' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:Calculation_1779907064314548225:nk]' value='left' />
+            <format attr='text-orientation' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:Calculation_1779907064314548225:nk]' value='0' />
+            <format attr='vertical-align' field='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:Calculation_1779907064314548225:nk]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[usr:Calculation_1779907064314707970:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:Calculation_1779907064314548225:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{6D2E9C9A-C771-4DC4-930C-7C55E56621B7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Summary'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_15' value='top' />
+          <format attr='text-align' id='dash-text_15' value='left' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='coingecko-crypto-list' name='federated.0yw0n6n13kouxc1b3vvfn1ytajgb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0yw0n6n13kouxc1b3vvfn1ytajgb'>
+        <column caption='Created Date' datatype='datetime' default-format='*m/d/yyyy' name='[created_date]' role='dimension' type='ordinal' />
+        <column caption='Coin ID' datatype='string' name='[id]' role='dimension' type='nominal' />
+        <column aggregation='Sum' caption='Market Cap Rank' datatype='real' default-format='n#,##0;-#,##0' name='[market_cap_rank]' role='dimension' type='quantitative' />
+        <column caption='Coin Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+        <column-instance column='[created_date]' derivation='None' name='[none:created_date:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[id]' derivation='None' name='[none:id:nk]' pivot='key' type='nominal' />
+        <column-instance column='[market_cap_rank]' derivation='None' name='[none:market_cap_rank:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+        <column-instance column='[symbol]' derivation='None' name='[none:symbol:nk]' pivot='key' type='nominal' />
+        <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98418' id='7' param='horz' w='99156' x='422' y='791'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98418' id='17' is-fixed='true' w='90708' x='422' y='791'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='87933' id='18' param='vert' w='90708' x='422' y='11276'>
+                <zone h='87933' id='5' name='Coin Summary' show-title='false' w='90708' x='422' y='11276'>
+                  <layout-cache fixed-size-h='56042' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='10485' id='63' param='horz' w='90708' x='422' y='791'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='10485' id='14' param='vert' w='24552' x='422' y='791'>
+                  <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' fixed-size='66' forceUpdate='true' h='7319' id='15' is-fixed='true' w='24552' x='422' y='791'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#333333' fontname='Tableau Bold' fontsize='24'>Cryptocurrency Dashboard</run>
+                      <run>
+Data is provided from CoinGecko.com and is updated every hour.</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='3166' id='16' name='Updated Date' show-title='false' w='24552' x='422' y='8110'>
+                    <layout-cache cell-count-h='1' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='1253' h='10485' id='68' is-fixed='true' param='horz' w='66156' x='24974' y='791'>
+                  <zone fixed-size='142' h='10485' id='66' is-fixed='true' name='Coins' w='7919' x='24974' y='791'>
+                    <layout-cache type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='366' h='10485' id='67' is-fixed='true' name='Total Market Cap' w='19746' x='32893' y='791'>
+                    <layout-cache fixed-size-h='127' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='138' h='10485' id='69' is-fixed='true' name='Market Indicator' w='7708' x='52639' y='791'>
+                    <layout-cache type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='124' h='10485' id='74' is-fixed='true' name='ATH Coins' w='6969' x='60347' y='791'>
+                    <layout-cache type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='120' h='10485' id='75' is-fixed='true' name='ATL Coins' w='6758' x='67316' y='791'>
+                    <layout-cache type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='10485' id='78' name='Avg. Pct Mined' w='15367' x='74074' y='791'>
+                    <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' fixed-size='24' h='10485' id='65' is-fixed='true' w='1689' x='89441' y='791'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' fixed-size='160' h='98418' id='25' is-fixed='true' w='8448' x='91130' y='791'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='10485' id='6' layout-strategy-id='distribute-evenly' param='vert' w='8448' x='91130' y='791'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='75' forceUpdate='true' h='10485' id='19' is-fixed='true' is-scaled='1' param='/Users/etran/data-product/metricsndimensions/Logos/mnd-small-logo.png' w='8448' x='91130' y='791'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='87933' id='26' param='vert' w='8448' x='91130' y='11276'>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='6825' id='8' name='Coin Summary' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:created_date:qk]' show-domain='false' show-null-ctrls='false' show-reldate-picker='false' w='8448' x='91130' y='11276'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='48' h='5539' id='9' is-fixed='true' mode='checkdropdown' name='Coin Summary' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:symbol:nk]' values='relevant' w='8448' x='91130' y='18101'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='5143' id='10' mode='checkdropdown' name='Coin Summary' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:name:nk]' values='relevant' w='8448' x='91130' y='23640'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='5143' id='11' mode='checkdropdown' name='Coin Summary' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:id:nk]' values='relevant' w='8448' x='91130' y='28783'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='6825' id='71' name='Coin Summary' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:market_cap_rank:qk]' values='database' w='8448' x='91130' y='33926'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='90' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98418' id='89' param='vert' w='99156' x='422' y='791'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' fixed-size='66' forceUpdate='true' h='7319' id='15' w='24552' x='422' y='791'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#333333' fontname='Tableau Bold' fontsize='24'>Cryptocurrency Dashboard</run>
+                    <run>
+Data is provided from CoinGecko.com and is updated every hour.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='76' h='10485' id='66' is-fixed='true' name='Coins' w='7919' x='24974' y='791'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='76' h='10485' id='67' is-fixed='true' name='Total Market Cap' w='19746' x='32893' y='791'>
+                  <layout-cache fixed-size-h='127' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='76' h='10485' id='69' is-fixed='true' name='Market Indicator' w='7708' x='52639' y='791'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='76' h='10485' id='74' is-fixed='true' name='ATH Coins' w='6969' x='60347' y='791'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='76' h='10485' id='75' is-fixed='true' name='ATL Coins' w='6758' x='67316' y='791'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='76' h='10485' id='78' is-fixed='true' name='Avg. Pct Mined' w='15367' x='74074' y='791'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='76' forceUpdate='true' h='10485' id='19' is-fixed='true' is-scaled='1' param='/Users/etran/data-product/metricsndimensions/Logos/mnd-small-logo.png' w='8448' x='91130' y='791'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='3166' id='16' is-fixed='true' name='Updated Date' show-title='false' w='24552' x='422' y='8110'>
+                  <layout-cache cell-count-h='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='6825' id='8' name='Coin Summary' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:created_date:qk]' show-domain='false' show-null-ctrls='false' show-reldate-picker='false' w='8448' x='91130' y='11276'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='48' h='5539' id='9' mode='checkdropdown' name='Coin Summary' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:symbol:nk]' values='relevant' w='8448' x='91130' y='18101'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='5143' id='10' mode='checkdropdown' name='Coin Summary' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:name:nk]' values='relevant' w='8448' x='91130' y='23640'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='5143' id='11' mode='checkdropdown' name='Coin Summary' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:id:nk]' values='relevant' w='8448' x='91130' y='28783'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='6825' id='71' name='Coin Summary' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:market_cap_rank:qk]' values='database' w='8448' x='91130' y='33926'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='87933' id='5' is-fixed='true' name='Coin Summary' show-title='false' w='90708' x='422' y='11276'>
+                  <layout-cache fixed-size-h='56042' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B96AE1F4-9CCD-454F-8C38-238B93D65A88}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='dashboard' maximized='true' name='Summary'>
+      <viewpoints>
+        <viewpoint name='ATH Coins'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ATL Coins'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg. Pct Mined'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Coin Summary' />
+        <viewpoint name='Coins'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Market Indicator'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Market Cap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Updated Date'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='26' />
+      <simple-id uuid='{22DC4074-7583-4FAD-9D38-1313A2E9D337}' />
+    </window>
+    <window class='worksheet' hidden='true' name='ATH Coins'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{39CB8D3E-6DE9-422E-8438-9105843BE851}' />
+    </window>
+    <window class='worksheet' hidden='true' name='ATL Coins'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{69561A9B-94CE-4DDB-ACF1-F68281CCFB1A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Avg. Pct Mined'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{518F3E80-098F-4FF8-940B-901528FFB1E9}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Coin Summary' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card size='31' type='pages' />
+            <card size='162' type='filters' />
+            <card size='233' type='marks' />
+            <card size='438' type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:created_date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='checkdropdown' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:symbol:nk]' type='filter' values='relevant' />
+            <card mode='checkdropdown' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:name:nk]' type='filter' values='relevant' />
+            <card mode='checkdropdown' param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:id:nk]' type='filter' values='relevant' />
+            <card param='[federated.0yw0n6n13kouxc1b3vvfn1ytajgb].[none:market_cap_rank:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{394A80E5-8146-4F37-BC61-4A55D1C4BFD8}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Coins'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F48FE1D4-ACEC-40D7-8922-1CF49E05D963}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Market Indicator'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1F818C9D-07C9-4B18-9C12-BE6B76E9772C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Market Cap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2C43D94D-7E8B-4BA8-955A-B1E6BE9CB0BA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Updated Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{55C5C385-6492-40A0-9CAC-01A22834AC4F}' />
+    </window>
+  </windows>
+</workbook>
